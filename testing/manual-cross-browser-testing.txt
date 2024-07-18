@@ -1,0 +1,17 @@
+Cross browser testing: Chrome, Mozzila, IE; 
+- no issues;
+- console Chrome inspector warning ( see screenshots );
+- console IE, Mozzila inspector warning (see screenshot ); 
+
+
+Cross-browser inspector testing: Chrome, Mozzila, IE;
+- responsive issues;
+
+Home 
+- responsive issue overlaping text h1;
+- responsive paragraph text alignment issue;
+
+About
+- table text responsive issue;
+
+All issues fixed!   

@@ -36,7 +36,6 @@ a {
 }
 
 a:visited {
-  /*visited link*/
   color: var(--lightGreyFontColor);
 }
 
@@ -47,7 +46,6 @@ a:focus {
 }
 
 a:active {
-  /*active link*/
   color: var(--greyFontColor);
 }
 
@@ -57,7 +55,7 @@ a:active {
   font-size: 24px;
   font-weight: bold;
   color: white;
-  background-image: linear-gradient(#42A1EC, #0070C9);
+  background-image: linear-gradient(#42a1ec, #0070c9);
   text-decoration: none;
   padding: 10px;
   border-radius: 7px;
@@ -73,10 +71,9 @@ a:active {
 input [type="submit"]:hover,
 input [type="submit"]:focus {
   cursor: pointer;
-  background-color: #005BB5;
+  background-color: #005bb5;
   opacity: 0.8;
   outline: none;
-  
 }
 
 .navigation-list__item--active {
@@ -87,7 +84,7 @@ input [type="submit"]:focus {
   display: flex;
   margin: 0 auto;
   padding: 20px;
-  gap: 20px;
+  column-gap: 20px;
   justify-content: center;
   align-items: stretch;
 }
@@ -105,7 +102,7 @@ input [type="submit"]:focus {
 }
 
 .contact-form input[type='submit']:hover {
-  background-color: var(--contactHoverColor); /* Darker grey on hover */
+  background-color: var(--contactHoverColor);
 }
 
 input[type="text"],
@@ -179,30 +176,29 @@ div.borderXwidth a {
   display: inline-block;
 }
 
-
-div.borderXwidth a:before,
-div.borderXwidth a:after {
+div.borderXwidth a::before,
+div.borderXwidth a::after {
   position: absolute;
   opacity: 0;
   width: 0%;
   height: 1px;
   content: '';
-  background: var(--greyFontColor); 
+  background: var(--greyFontColor);
   transition: all 0.3s;
 }
 
-div.borderXwidth a:before {
-  left: 0px;
-  top: 0px;
+div.borderXwidth a::before {
+  left: 0%;
+  top: 0%;
 }
 
-div.borderXwidth a:after {
-  right: 0px;
-  bottom: 0px;
+div.borderXwidth a::after {
+  right: 0%;
+  bottom: 0%;
 }
 
-div.borderXwidth a:hover:before,
-div.borderXwidth a:hover:after {
+div.borderXwidth a:hover::before,
+div.borderXwidth a:hover::after {
   opacity: 1;
   width: 100%;
 }
@@ -222,8 +218,7 @@ div.borderXwidth a:hover:after {
 }
 
 .cloud-back {
-  animation: 38s cloud-move-reverse infinite alternate linear, 
-  4s cloud-color-change infinite alternate linear;
+  animation: 38s cloud-move-reverse infinite alternate linear;
 }
 
 @supports (display: grid) {
@@ -256,7 +251,6 @@ table {
   border: 3px solid #cdcdcd;
   border-radius: 6px;
   text-align: center;
-  margin-top: 20px;
   margin: 20px auto;
 }
 
@@ -269,9 +263,11 @@ td {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -281,6 +277,7 @@ td {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -288,19 +285,23 @@ td {
 
 @keyframes cloud-color-change {
   0% {
-    fill: #ffffff;
-    }
+    fill: rgb(255, 255, 255);
+  }
+
   50% {
-    fill: #00eeff;
-    }
+    fill: rgb(0, 238, 255);
+  }
+
   100% {
-    fill: #7b7b7b;
-    }
+    fill: rgb(123, 123, 123);
+  }
 }
+
 @keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }

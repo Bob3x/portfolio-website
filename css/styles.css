@@ -235,7 +235,7 @@ div.borderXwidth a:hover::after {
     width: auto;
     min-height: auto;
     margin: 0;
-    text-align: center;
+    text-align: left;
     padding-bottom: 8px;
   }
 

@@ -28,6 +28,7 @@ body {
     font-weight: 400;
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
+    z-index: 1;
 }
 
 /* Typography */
@@ -167,18 +168,13 @@ input[type="tel"] {
 .page-header {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 2;
     display: flex;
     width: 100%;
     padding: 20px;
     height: 96px;
-    background: linear-gradient(
-        to bottom,
-        var(--lightGrey) 0%,
-        var(--lightGrey) 95%,
-        rgba(230, 230, 230, 0.95) 100%
-    );
-    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.26);
+    background: rgba(233, 233, 233, 0.99);
+    /**box-shadow: 0 2px 18px rgba(0, 0, 0, 0.23);*/
     margin-bottom: 86px;
 }
 

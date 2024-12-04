@@ -12,21 +12,23 @@
             rel="stylesheet" />
         <!-- Normalize browser stylings -->
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <title>PorfolioWebsiteWork</title>
     </head>
     <body>
         <!-- Header including the logo and the main navigation -->
         <header class="page-header">
-            <img src="./img/B-G_logo.png" alt="Logo" />
+            <a href="/" role="brand">
+                <img src="./img/B-G_logo.png" alt="Logo" />
+            </a>
             <nav class="main-navigation page-header__item">
                 <div class="containter borderXwidth">
                     <ul role="menubar" class="navigation-list">
                         <li role="presentation">
-                            <a
-                                href="index.html"
-                                role="menuitem"
-                                class="navigation-navigation-list__item"
+                            <a href="index.html" role="menuitem" class="navigation-list__item"
                                 >Home</a
                             >
                         </li>
@@ -52,51 +54,195 @@
                 </div>
             </nav>
         </header>
-        <section>
-            <h1>My Work</h1>
+        <section class="work-section">
+            <h1>my work</h1>
             <div class="grid">
                 <div class="grid__item">
-                    <h2>PokedeXx</h2>
-                    <p>Project description</p>
-                    <a href="#"> GitHub </a>
+                    <div class="card-header">
+                        <h2>pokedeXx</h2>
+                        <img
+                            src="assets/PokedeXx.png"
+                            alt="Project Screenshot"
+                            class="card-header__image" />
+                    </div>
+
+                    <div class="card-body">
+                        <h4>Overview</h4>
+                        <p class="project-description">
+                            Pokedex is simple web application built with HTML, CSS and JavaScript.
+                            Users can browse through a list of Pokemon cards and select one by name.
+                            By clicking on a Pokemon image and more details about the character are
+                            displayed. Friendly and simple UI with individual modal providing more
+                            information. The app is fetching data from the official Pokemon API
+                            filtered to selected elements.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Bob3x/PokedeXx" class="btn btn-primary">
+                                <i class="fab fa-github"></i> view on GitHub
+                            </a>
+                            <a href="https://bob3x.github.io/PokedeXx/" class="btn btn-primary">
+                                <i class="fas fa-globe"></i> live
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__item">
-                    <h2>myFlix</h2>
-                    <p>Node js Backend API</p>
-                    <a href="https://github.com/Bob3x/my-movie-app" target="_blank"> GitHub </a>
+                    <div class="card-header">
+                        <h2>myFlix API</h2>
+                        <img
+                            src="assets/myFlix_API.png"
+                            alt="Project Screenshot"
+                            class="card-header__image" />
+                    </div>
+                    <div class="card-body">
+                        <h4>Overview</h4>
+                        <p class="project-description">
+                            RESTful API built with Node.js, Express, and MongoDB. Provides movie
+                            information, user authentication, and favorites management. Features JWT
+                            authentication and database integration.
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/Bob3x/my-movie-app"
+                                class="btn btn-primary"
+                                target="_blank">
+                                <i class="fab fa-github"></i> view on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__item">
-                    <h2>myFlix</h2>
-                    <p>React Frontend application</p>
-                    <a href="https://spontaneous-gelato-a5144f.netlify.app/" target="_blank"
-                        >Live</a
-                    >
-                    <br />
-                    <a href="https://github.com/Bob3x/myFlix-client" target="_blank"> GitHub </a>
+                    <div class="card-header">
+                        <h2>myFlix-React</h2>
+                        <img
+                            src="assets/myFlix-React_02.png"
+                            alt="Project Screenshot"
+                            class="card-header__image" />
+                    </div>
+                    <div class="card-body">
+                        <h4>Overview</h4>
+                        <p class="project-description">
+                            Single-Page Application built with React and Bootstrap. This is frontend
+                            for myFlix API handling user interactions with the server. Using modern
+                            technologies for developing simple, responsive UI displaying move
+                            collection to the users. Allowing user to register and login, browse
+                            trough available movies and see more information about a selected movie.
+                            Additional users are able to update their profile and create favorite
+                            movies list.
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/Bob3x/myFlix-client"
+                                class="btn btn-primary"
+                                target="_blank">
+                                <i class="fab fa-github"></i> view on GitHub
+                            </a>
+                            <a
+                                href="https://spontaneous-gelato-a5144f.netlify.app/login"
+                                class="btn btn-primary"
+                                target="_blank"
+                                ><i class="fas fa-globe"></i>
+                                live
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__item">
-                    <h2>meeet App</h2>
-                    <p>
-                        <strong>meeet</strong> is a React application, developed with TDD and BDD
-                        approach, using Serverless framework deployed to AWS Lambda. It's modern and
-                        scalable PWA with cool features. Users can browse events available in
-                        selected City. Event's data is fetched from Google Calendar API.
-                        <strong>meeet</strong> App can be installed on smart phones and used offline
-                        as well. Last but not least colorful charts are visualizing events
-                        information.
-                    </p>
-                    <a href="https://bob3x.github.io/meeet" target="_blank">Live</a> <br />
-                    <a href="https://github.com/Bob3x/meeet" target="_blank"> GitHub </a>
+                    <div class="card-header">
+                        <h2>myFlix-client</h2>
+                        <img
+                            src="assets/myFlix-Angular.png"
+                            alt="Project Screenshot"
+                            class="card-header__image" />
+                    </div>
+                    <div class="card-body">
+                        <h4>Overview</h4>
+                        <p class="project-description">
+                            A frontend client-side movie application built with Angular and Material
+                            UI. It supports already excising server-side myFlix API handling user
+                            interactions and rendering several interface views. Implementing
+                            real-time data rendering with movie collection allowing user to create a
+                            profile and add or remove favorite movies.
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/Bob3x/my-movie-app"
+                                class="btn btn-primary"
+                                target="_blank">
+                                <i class="fab fa-github"></i> view on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__item">
-                    <h2>Project 5</h2>
-                    <p>Project description</p>
-                    <a href="#"> GitHub </a>
+                    <div class="card-header">
+                        <h2>meeet App</h2>
+                        <img
+                            src="assets/meeet.png"
+                            alt="Project Screenshot"
+                            class="card-header__image" />
+                    </div>
+                    <div class="card-body">
+                        <h4>Overview</h4>
+                        <p class="project-description">
+                            <strong>meeet</strong> is a React application, developed with TDD and
+                            BDD approach, using Serverless framework deployed to AWS Lambda. It's
+                            modern and scalable PWA with cool features. Users can browse events
+                            available in selected City. Event's data is fetched from Google Calendar
+                            API. <strong>meeet</strong> App can be installed on smart phones and
+                            used offline as well. Last but not least colorful charts are visualizing
+                            events information.
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/Bob3x/meeet"
+                                class="btn btn-primary"
+                                target="_blank">
+                                <i class="fab fa-github"></i> view on GitHub
+                            </a>
+                            <a
+                                href="https://spontaneous-gelato-a5144f.netlify.app/login"
+                                class="btn btn-primary"
+                                target="_blank"
+                                ><i class="fas fa-globe"></i>
+                                live
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__item">
-                    <h2>Your Project</h2>
-                    <p>Project description</p>
-                    <a href="contact.html">Contact me</a>
+                    <div class="card-header">
+                        <h2>chat-me</h2>
+                        <img
+                            src="assets/chat-me.png"
+                            alt="Project Screenshot"
+                            class="card-header__image" />
+                    </div>
+                    <div class="card-body">
+                        <h4>Overview</h4>
+                        <p class="project-description">
+                            A mobile chat application built with React Native and Expo that enables
+                            real-time messaging with image sharing and location features.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-github"></i> view on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card-header">
+                        <h2>Your Project</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Project description</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-github"></i> view on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

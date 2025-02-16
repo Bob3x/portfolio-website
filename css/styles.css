@@ -67,6 +67,10 @@ h4 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover,
 a:focus {
     cursor: pointer;
@@ -268,10 +272,10 @@ div.borderXwidth a:hover::after {
 }
 
 .grid__item {
-    min-height: 400px;
+    max-height: 400px;
     display: flex;
     flex-direction: column;
-    background: rgba(52, 74, 104, 0.596);
+    background: rgba(200, 200, 200, 0.134);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -300,7 +304,7 @@ div.borderXwidth a:hover::after {
 }
 
 .card-header:hover .card-header__image {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .card-header h2 {
@@ -310,8 +314,8 @@ div.borderXwidth a:hover::after {
     right: 0;
     padding: 1.5rem;
     margin: 0;
-    color: rgb(243, 243, 243);
-    background: linear-gradient(to top, rgba(41, 41, 41, 0.4), rgba(187, 187, 187, 0.2));
+    color: rgb(40, 40, 40);
+    background: linear-gradient(to top, rgba(170, 170, 170, 0.4), rgba(187, 187, 187, 0.144));
     font-size: 1.5rem;
     font-weight: 500;
     z-index: 100;
@@ -328,14 +332,15 @@ div.borderXwidth a:hover::after {
 }
 
 .project-description {
+    text-decoration: none;
     text-align: left;
-    color: #f3f3f3;
+    color: #232323;
     margin-bottom: 1.5rem;
     line-height: 1.6;
     width: 100%;
     display: block;
     padding: 0;
-    min-height: 280px;
+    height: 40px;
 }
 
 .project-links {
@@ -349,29 +354,29 @@ div.borderXwidth a:hover::after {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.25rem;
-    border-radius: 6px;
+    border-radius: 16px;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
 .btn-primary {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.068), rgba(165, 165, 165, 0.8));
-
+    background: transparent;
+    border-style: solid;
     border-width: 1px;
-    border-color: rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(50, 50, 50, 0.5);
+    color: rgba(70, 70, 70, 0.75);
     font-weight: 300;
 }
 
 .btn-primary:hover {
-    border-color: rgba(255, 255, 255, 0.9); /* More opaque on hover */
-    border-width: 1px;
+    border-color: rgba(45, 45, 45, 0.9); /* More opaque on hover */
+    border-width: 2px;
 }
 
 .btn-secondary {
     background-color: #6c757d;
-    color: white;
+    color: rgba(56, 56, 56, 0.838);
 }
 
 .btn:hover {
